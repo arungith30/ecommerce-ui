@@ -107,6 +107,12 @@ const Amount = styled.span`
   margin: 0px 5px;
 `;
 
+const Dollor = styled.span`
+ 
+margin:5px;
+font-size:25px; 
+`;
+
 const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
@@ -159,7 +165,7 @@ const handleClicked =(type)=>{
           <Desc>
             {product.desc}
           </Desc>
-          <Price>{product.price}</Price>
+          <Price><Dollor>$</Dollor>{product.price}</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
