@@ -144,8 +144,8 @@ const [quantity,setQuantity] = useState(1)
     };
     getProduct();
   }, [id]);
-console.log(product)
-const handleClicked =(type)=>{
+ 
+const handleQuantity =(type)=>{
   if(type==="asc"){
     setQuantity(quantity+1)
   }
@@ -189,9 +189,9 @@ const handleClicked =(type)=>{
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove onClick={(e)=>handleClicked("dec")}/>
+              <Remove onClick={(e)=>handleQuantity("dec")}/>
               <Amount>{quantity}</Amount>
-              <Add onClick={(e)=>handleClicked("asc")}/>
+              <Add onClick={(e)=>handleQuantity("asc")}/>
             </AmountContainer>
             <Button>ADD TO CART</Button>
           </AddContainer>
